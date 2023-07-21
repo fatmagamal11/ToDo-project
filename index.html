@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="java.js"></script>
+    <link rel="shortcut icon" href="img/download.jpeg" type="image/x-icon" />
+    <!-- <link rel="stylesheet" href="css/all.min.css" /> -->
+  </head>
+  <body>
+    <!-- model (pop up) -->
+    <div class="model" id="model">
+      <div class="container">
+        <h1 class="warning">Warning</h1>
+        <hr>
+        <p>You Cannot Create An Empty To Do ,please enter yur to do !</p>
+       <hr> <div><button class="ok" onclick="model()">OK</button></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">
+        <div class="layer">
+          <h1>CREATE YOUR</h1>
+          <h3>Todo</h3>
+          <input type="text" placeholder="List TITLE" id="input_text" />
+          <button onclick="myFunction()" class="button" type="submit">
+            Create List
+          </button>
+        </div>
+
+        <div class="todo">
+          <div class="layer">
+            <!-- <button class="todobtn" type="submit">Todo List</button> -->
+            <!-- <button class="comletedbtn" type="submit">completed List</button> -->
+            <div class="table" id="table">
+              <!-- <div class="first_colum completed">
+                <span class="first" id="first">LIST-1 TITLE</span>
+                <span class="second " id="second">Delete</span>
+                <span class="third">Compeleted</span>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
